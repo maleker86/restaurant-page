@@ -1,4 +1,5 @@
 import './style.css';
+// import './style.module.css'; 
 import HeaderImg from './header.jpg';
 
 console.log("This is specifically the page-load.js");
@@ -11,9 +12,8 @@ function load_content() {
     console.log("This is the content function.");
 
     // add copy about how cool the restaurant is 
-    // p.classList.add('red');
+    copyText.classList.add('red');
     copyText.textContent = "Some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius!";
-    copyText.classList.add('hello');
     
     // add the image to a div...
     const myHeader = new Image();
