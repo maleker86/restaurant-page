@@ -6,21 +6,27 @@ console.log("This is specifically the page-load.js");
 
 function load_content() {
     const Content = document.createElement('div');
+    const CopyText = document.createElement('p');
+    const Title = document.createElement('h2');
 
-    const copyText = document.createElement('p');
+    Content.classList.add('container');
 
     console.log("This is the content function.");
 
     // add copy about how cool the restaurant is 
-    copyText.classList.add('red');
-    copyText.textContent = "Some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius!";
+    CopyText.classList.add('red');
+    CopyText.textContent = "Some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius!";
     
+    // customize the title
+    Title.textContent = "Welcome to the Restaurant!";
+
     // add the image to a div...
     const myHeader = new Image();
     myHeader.src = HeaderImg;
 
+    Content.appendChild(Title);
     Content.appendChild(myHeader);
-    Content.appendChild(copyText);
+    Content.appendChild(CopyText);
 
     return Content;
 }
@@ -31,4 +37,5 @@ function load_content() {
         <p>some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius. 
        </p> */}
 
-document.body.appendChild(load_content());
+document.body.append(load_content());
+// load_content();
