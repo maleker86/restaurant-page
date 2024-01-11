@@ -4,7 +4,7 @@ import HeaderImg from './header.jpg';
 
 console.log("This is specifically the page-load.js");
 
-function load_content() {
+export function load_content() {
     const Content = document.createElement('div');
     const CopyText = document.createElement('p');
     const Title = document.createElement('h2');
@@ -29,7 +29,12 @@ function load_content() {
     Content.appendChild(myHeader);
     Content.appendChild(CopyText);
 
-    return Content;
+    // return {
+    //     Content,
+    //     CopyText,
+    //     Title,
+    //     load_content
+    // };
 }
 
 {/* <div id="content">
@@ -38,5 +43,5 @@ function load_content() {
         <p>some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius. 
        </p> */}
 
-document.body.append(load_content());
+// document.body.append(load_content());
 // load_content();
