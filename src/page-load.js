@@ -10,7 +10,7 @@ export function load_content() {
     const CopyText = document.createElement('p');
     const Title = document.createElement('h2');
 
-    console.log("This is the content function.");
+    console.log("This is the page-load page.");
 
     Content.classList.add('container');
 
