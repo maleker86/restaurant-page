@@ -6,10 +6,10 @@ console.log("This is specifically the page-load.js");
 
 export function load_content() {
     const Content = document.createElement('div');
+    Content.classList.add('container');
+
     const CopyText = document.createElement('p');
     const Title = document.createElement('h2');
-
-    Content.classList.add('container');
 
     console.log("This is the content function.");
 
@@ -24,18 +24,19 @@ export function load_content() {
     // add the image to a div...
     const myHeader = new Image();
     myHeader.src = HeaderImg;
-
-    Content.appendChild(Title);
-    Content.appendChild(myHeader);
-    Content.appendChild(CopyText);
-
+  
     // return {
     //     Content,
     //     CopyText,
     //     Title,
-    //     load_content
+    //     load_content,
     // };
 }
+
+
+Content.appendChild(HeaderImg);
+Content.appendChild(CopyText);
+Content.appendChild(Title);
 
 {/* <div id="content">
         <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="https://unsplash.com/photos/sliced-bread-on-white-ceramic-plate-STqHLqMne3k" class="header">
@@ -43,5 +44,7 @@ export function load_content() {
         <p>some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius. 
        </p> */}
 
+
+
 // document.body.append(load_content());
-// load_content();
+load_content();
