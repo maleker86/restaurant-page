@@ -38,5 +38,3 @@ loadButtons();
 load_home();
 
 console.log("this is index.js. tab swtching logic & event listeners should go here...");
-
-document.body.prepend(button);
