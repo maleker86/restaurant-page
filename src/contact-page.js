@@ -23,7 +23,7 @@ export function load_contact() {
     
     // customize the title
     Title.classList.add('heading');
-    Title.textContent = "Welcome to the Contact!";
+    Title.textContent = "Contact us!";
 
     // add the image to a div...
     const myHeader = new Image();
