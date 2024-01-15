@@ -34,7 +34,8 @@ export function load_contact() {
     Content.appendChild(myHeader);
     Content.appendChild(CopyText);
     Content.appendChild(Title);
+
+    create_button();
+    loadButtons();
 }
 
-create_button();
-loadButtons();

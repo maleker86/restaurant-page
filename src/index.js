@@ -41,6 +41,6 @@ export function loadButtons() {
 };
 
 load_home();
-loadButtons();
+// loadButtons();
 
 console.log("this is index.js. tab swtching logic & event listeners should go here...");
