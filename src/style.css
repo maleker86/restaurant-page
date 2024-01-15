@@ -5,6 +5,7 @@
     "buttons buttons buttons"
     "image image image"
     "heading heading heading"
+    "text text text"
     "text text text";
   align-items: center;
   border: 1px solid blue;
@@ -31,7 +32,7 @@ img {
   grid-area: text;
   text-align: justify;
   text-align-last: center;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .heading {
