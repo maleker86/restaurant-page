@@ -3,9 +3,9 @@ import './index.js';
 import { create_button, loadButtons } from './index.js';
 import HeaderImg from './header.jpg';
 
-console.log("This is home page");
+console.log("This is contact page");
 
-export function load_home() {
+export function load_contact() {
     const Content = document.getElementById("content");
 
     Content.innerHTML = "";
@@ -13,7 +13,7 @@ export function load_home() {
     const CopyText = document.createElement('p');
     const Title = document.createElement('h2');
 
-    console.log("This is loading the home page.");
+    console.log("This is loading the contact page.");
 
     Content.classList.add('container');
 
@@ -23,7 +23,7 @@ export function load_home() {
     
     // customize the title
     Title.classList.add('heading');
-    Title.textContent = "Welcome to the Restaurant!";
+    Title.textContent = "Welcome to the Contact!";
 
     // add the image to a div...
     const myHeader = new Image();

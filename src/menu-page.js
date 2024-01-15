@@ -1,8 +1,9 @@
 import './style.css';
 import './index.js';
+import { create_button, loadButtons } from './index.js';
 import HeaderImg from './header.jpg';
 
-console.log("This is specifically the page-load.js");
+console.log("This is menu page");
 
 export function load_menu() {
     const Content = document.getElementById("content");
@@ -12,7 +13,7 @@ export function load_menu() {
     const CopyText = document.createElement('p');
     const Title = document.createElement('h2');
 
-    console.log("This is the menu page.");
+    console.log("This is loading the menu page.");
 
     Content.classList.add('container');
 
@@ -35,5 +36,5 @@ export function load_menu() {
     Content.appendChild(Title);
 }
 
-
-// load_content();
+create_button();
+loadButtons();

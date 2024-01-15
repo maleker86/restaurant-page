@@ -1,9 +1,10 @@
 import './style.css';
 import { load_home } from './home-page';
 import { load_menu } from './menu-page';
+import { load_contact } from './contact-page';
 
 //create buttons 
-function create_button(button_text, clickHandler) {
+export function create_button(button_text, clickHandler) {
     const button = document.createElement('button');
     button.innerText = button_text;
     button.addEventListener('click', clickHandler);
@@ -11,7 +12,7 @@ function create_button(button_text, clickHandler) {
     return button;
 };
 
-function loadButtons() {
+export function loadButtons() {
     const contentDiv = document.getElementById('content');
     
     const homeButton = create_button("home", () => {
@@ -27,13 +28,15 @@ function loadButtons() {
     });
 
     const contactButton = create_button("contact", () => {
+        load_contact();
         console.log("contact button clicked!");
 
     });
 
-    contentDiv.prepend(homeButton);
-    contentDiv.prepend(menuButton);
-    contentDiv.prepend(contactButton);
+
+    contentDiv.append(homeButton);
+    contentDiv.append(menuButton);
+    contentDiv.append(contactButton);
 
 };
 
