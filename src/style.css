@@ -2,8 +2,8 @@
   display: grid;
     gap: 5vw;
     grid-template-areas: 
-    "image heading heading"
-    "image text text";
+    "image image image"
+    "heading text text";
   align-items: center;
   border: 1px solid blue;
   padding: 5vw;

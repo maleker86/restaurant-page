@@ -1,7 +1,7 @@
 import './style.css';
 import './index.js';
 import { create_button, loadButtons } from './index.js';
-import HeaderImg from './header.jpg';
+import HeaderImg from './menu.jpg';
 
 console.log("This is menu page");
 
