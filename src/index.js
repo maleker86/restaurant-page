@@ -3,17 +3,20 @@ import { load_home } from './home-page';
 import { load_menu } from './menu-page';
 import { load_contact } from './contact-page';
 
+const contentDiv = document.getElementById('content');
+
+
 //create buttons 
 export function create_button(button_text, clickHandler) {
     const button = document.createElement('button');
     button.innerText = button_text;
     button.addEventListener('click', clickHandler);
+    button.classList.add('buttons');
 
     return button;
 };
 
 export function loadButtons() {
-    const contentDiv = document.getElementById('content');
     
     const homeButton = create_button("home", () => {
         load_home();
@@ -32,7 +35,6 @@ export function loadButtons() {
         console.log("contact button clicked!");
 
     });
-
 
     contentDiv.append(homeButton);
     contentDiv.append(menuButton);

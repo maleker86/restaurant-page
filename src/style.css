@@ -2,6 +2,7 @@
   display: grid;
     gap: 5vw;
     grid-template-areas: 
+    "buttons buttons buttons"
     "image image image"
     "heading text text";
   align-items: center;
@@ -9,6 +10,11 @@
   padding: 5vw;
   width: 85vw;
   margin: auto;
+}
+
+.buttons {
+  width: auto;
+  height: auto;
 }
 
 img {
