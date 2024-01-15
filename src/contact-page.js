@@ -19,7 +19,7 @@ export function load_contact() {
 
     // add copy about how cool the restaurant is 
     CopyText.classList.add('text');
-    CopyText.textContent = "Some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius!";
+    CopyText.innerText = "Some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius!";
     
     // customize the title
     Title.classList.add('heading');

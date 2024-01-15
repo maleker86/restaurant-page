@@ -12,18 +12,16 @@ export function load_menu() {
 
     const CopyText = document.createElement('p');
     const Title = document.createElement('h2');
-
     console.log("This is loading the menu page.");
-
     Content.classList.add('container');
 
     // add copy about how cool the restaurant is 
     CopyText.classList.add('text');
-    CopyText.textContent = "Some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius!";
+    CopyText.innerText = "Some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius!";
     
     // customize the title
     Title.classList.add('heading');
-    Title.textContent = "Welcome to the Menu!";
+    Title.textContent = "This is our menu!";
 
     // add the image to a div...
     const myHeader = new Image();
