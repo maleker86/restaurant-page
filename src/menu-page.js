@@ -4,7 +4,7 @@ import HeaderImg from './header.jpg';
 
 console.log("This is specifically the page-load.js");
 
-export function load_home() {
+export function load_menu() {
     const Content = document.getElementById("content");
 
     Content.innerHTML = "";
@@ -12,7 +12,7 @@ export function load_home() {
     const CopyText = document.createElement('p');
     const Title = document.createElement('h2');
 
-    console.log("This is the home page.");
+    console.log("This is the menu page.");
 
     Content.classList.add('container');
 
@@ -22,7 +22,7 @@ export function load_home() {
     
     // customize the title
     Title.classList.add('heading');
-    Title.textContent = "Welcome to the Restaurant!";
+    Title.textContent = "Welcome to the Menu!";
 
     // add the image to a div...
     const myHeader = new Image();
