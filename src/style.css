@@ -2,8 +2,8 @@
   display: grid;
     gap: 5vw;
     grid-template-areas: 
-    "image image image"
-    "heading text text";
+    "image heading heading"
+    "image text text";
   align-items: center;
   border: 1px solid blue;
   padding: 5vw;
@@ -13,7 +13,7 @@
 
 img {
   grid-area: image;
-  width: 85vw;
+  width: 85%;
   height: auto;
   max-height: 250px;
   overflow-y: hidden;

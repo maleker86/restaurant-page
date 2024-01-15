@@ -1,10 +1,12 @@
 import './style.css';
+import './index.js';
 import HeaderImg from './header.jpg';
 
 console.log("This is specifically the page-load.js");
 
-export function load_content() {
-    const Content = document.createElement('div');
+export function load_home() {
+    const Content = document.getElementById("content");
+
     const CopyText = document.createElement('p');
     const Title = document.createElement('h2');
 
