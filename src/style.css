@@ -4,12 +4,14 @@
     grid-template-areas: 
     "buttons buttons buttons"
     "image image image"
-    "heading text text";
+    "heading heading heading"
+    "text text text";
   align-items: center;
   border: 1px solid blue;
   padding: 5vw;
   width: 85vw;
   margin: auto;
+  box-shadow: 5px 5px 10px gray;
 }
 
 .buttons {
@@ -19,9 +21,8 @@
 
 img {
   grid-area: image;
-  width: 85%;
+  width: 90%;
   height: auto;
-  max-height: 250px;
   overflow-y: hidden;
   margin: auto;
 }
@@ -30,9 +31,11 @@ img {
   grid-area: text;
   text-align: justify;
   text-align-last: center;
+  margin: 0;
 }
 
 .heading {
   grid-area: heading;
   text-align: center;
+  margin: 0;
 }
