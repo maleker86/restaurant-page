@@ -19,7 +19,7 @@ export function load_home() {
 
     // add copy about how cool the restaurant is 
     CopyText.classList.add('text');
-    CopyText.textContent = "Some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius! Laborum do irure aliquip culpa ullamco eu nisi ad sit cupidatat aliquip id. Do tempor sunt reprehenderit qui in est velit ea exercitation veniam. Sit eu in elit pariatur cillum."
+    CopyText.innerText = "Some copy about how wonderful the restaurant is. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tortor odio. Duis ultricies dapibus massa, at auctor erat ultricies in. Proin et lacus varius! Laborum do irure aliquip culpa ullamco eu nisi ad sit cupidatat aliquip id. \n \r Do tempor sunt reprehenderit qui in est velit ea exercitation veniam. Sit eu in elit pariatur cillum."
 
     // customize the title
     Title.classList.add('heading');
